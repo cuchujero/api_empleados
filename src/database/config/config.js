@@ -16,7 +16,7 @@ PRODUCTION_DB_PORT
 
 module.exports = {
   "test": {
-    "username": cuchujero,
+    "username": TEST_DB_USERNAME,
     "password": TEST_DB_PASSWORD,
     "database": TEST_DB_DATABASE,
     "host": TEST_DB_HOST,
