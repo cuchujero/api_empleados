@@ -16,20 +16,20 @@ PRODUCTION_DB_PORT
 
 module.exports = {
   "test": {
-    "username": "cuchujero",
-    "password": "Goku123!",
-    "database": "cuchujero_dl",
-    "host": "mysql-cuchujero.alwaysdata.net",
-    "dialect": "mysql",
-    "port": 3306
+    "username": cuchujero,
+    "password": TEST_DB_PASSWORD,
+    "database": TEST_DB_DATABASE,
+    "host": TEST_DB_HOST,
+    "dialect": TEST_DB_DIALECT,
+    "port": TEST_DB_PORT
   },
   "production": {
-    "username": "cuchujero",
-    "password": "Goku123!",
-    "database": "cuchujero_dl",
-    "host": "mysql-cuchujero.alwaysdata.net",
-    "dialect": "mysql",
-    "port": 3306
+    "username": PRODUCTION_DB_USERNAME,
+    "password": PRODUCTION_DB_PASSWORD,
+    "database": PRODUCTION_DB_DATABASE,
+    "host": PRODUCTION_DB_HOST,
+    "dialect": PRODUCTION_DB_DIALECT,
+    "port": PRODUCTION_DB_PORT
   }
 }
 
