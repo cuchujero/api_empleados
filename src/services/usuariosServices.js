@@ -52,8 +52,8 @@ const services = {
         if (!usuarioSearch){
             return {code: 404, message: 'email no encontrado'};
         }
-
-        if(bcrypt.compareSync(usuarioData.clave, usuarioSearch.clave,)){
+       
+        if(bcrypt.compareSync(usuarioData.clave, usuarioSearch.clave)){
             reqSession.user_id = usuarioSearch.id;
             return {code: 200, message: 'acceso exitoso', data: usuarioSearch};
         }
@@ -61,9 +61,9 @@ const services = {
         return {code: 401, message: 'clave incorrecta'};
     },
 
-    updateProfesional: async (userData) => {
+    updateUsuario: async (userData) => {
 
-        if (!usuarioData.id) { return {code: 404, message: 'id de usuario faltante'}; }
+        if (!userData.id) { return {code: 404, message: 'id de usuario faltante'}; }
 
         const updatedFields = {};
 
